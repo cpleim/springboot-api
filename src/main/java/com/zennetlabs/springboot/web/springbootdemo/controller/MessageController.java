@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class LoginController {
+public class MessageController {
 
-	@RequestMapping("/login")
-	public String loginMessage(@RequestParam String name, ModelMap model) {
-		model.put("name", name);
-		System.out.println("Name is: " + name);
-		return "login";
+	@RequestMapping("/message")
+	public String showMessage(@RequestParam String msg, ModelMap model) {
+		model.put("msg", msg);
+		return "message";
 	}
+
 }

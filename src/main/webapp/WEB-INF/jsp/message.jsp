@@ -5,7 +5,7 @@
 </head>
 
 <body>
-My first JSP ${name}
+Query String message ${msg}
 </body>
 
 </html>
